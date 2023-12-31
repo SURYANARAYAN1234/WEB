@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="https://www.metadatacorp.com/wp-content/uploads/2021/05/favicon.ico" sizes="32x32" />
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="https://www.metadatacorp.com/wp-content/themes/metadata/css/aos.css" />
+  <script>
+    function showImage(){
+        var icon=document.getElementById('icon');
+        icon.className="bi bi-telephone-outbound-fill";
+        icon.style.marginRight='10px';
+    }
+    function hideImage(){
+        var icon=document.getElementById('icon');
+        icon.className="";
+        icon.style.marginRight='0px';
+    }
+
+    window.addEventListener('scroll',reveal);
+    function reveal(){
+      var reveals=document.querySelectorAll('.reveal');
+      for(var i=0; i< reveals.length; i++){
+        var windowheight=window.innerHeight;
+        var revealtop=reveals[i].getBoundingClientRect().top;
+        var revealpoint=250;
+        if(revealtop < windowheight - revealpoint){
+          reveals[i].classList.add('active');
+        }else{
+          reveals[i].classList.remove('active');
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+    <header id="myHeader">
+        <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+                    <div class="container">
+                      <a class="navbar-brand" href="#"><img style="height: 50px;" src="https://www.metadatacorp.com/wp-content/themes/metadata/images/logo.jpg" alt="logo"></a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                     
+                      <div class="collapse navbar-collapse menu-bar" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item ">
+                            <a class="nav-link" aria-current="page" href="#">Services</a>
+                          </li>
+                          <li class="nav-item dropdown w-50" >
+                            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" href="#">Dynamics 365</a>
+                            <div class="sub-menu-1">
+                                <ul class="dropdown-menu w-auto">
+                                    <li><a class="dropdown-item" href="#">Marketing</a></li>
+                                    <li><a class="dropdown-item" href="#">Sales</a></li>
+                                    <li><a class="dropdown-item" href="#">Customer Services</a></li>
+                                    <li><a class="dropdown-item" href="#">Field Service</a></li>
+                                    <li><a class="dropdown-item" href="#">Project Service Automation</a></li>
+                                </ul>
+                            </div>
+                          </li>
+                          <li class="nav-item dropdown w-50">
+                            <a class="nav-link dropdown-toggle" role="button"  data-bs-toggle="dropdown" href="#">Power Platform</a>
+                            <div class="sub-menu-1">
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item"  href="#">Power Apps</a></li>
+                                    <li><a class="dropdown-item"  href="#">Power BI</a></li>
+                                    <li><a class="dropdown-item"  href="#">Power Automate</a></li>
+                                </ul>
+                            </div>
+                          </li>
+                          <li class="nav-item w-50">
+                            <a class="nav-link"  aria-current="page" href="#">Property-xRM</a>
+                          </li>
+                          <li class="nav-item dropdown w-50">
+                            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  href="#">Resources</a>
+                            <div class="sub-menu-1">
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item"  href="#">Blog</a></li>
+                                </ul>
+                            </div>
+                          </li>
+                          <li class="nav-item dropdown w-50">
+                            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" href="#">Company</a>
+                            <div class="sub-menu-1">
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item"  href="#">About</a></li>
+                                    <li><a class="dropdown-item"  href="#">Life at Metadata</a></li>
+                                    <li><a class="dropdown-item"  href="#">Careers</a></li>
+                                </ul>
+                            </div>
+                          </li>
+                          <li class="nav-item">
+                            <div class="input-group">
+                              <input type="text" class="form-control" placeholder="">
+                              <div class="input-group-text bi bi-search"></div>
+                            </div>
+                          </li>
+                        </ul>
+                        
+                      </div>
+                      <button type="button" onmouseout="hideImage()" onmouseover="showImage()" class="btn btn-danger btn-lg p-auto"><span id="icon"></span>Talk to us</button>
+                    </div>
+                  </nav>
+        </div>
+    </header>
+    <article>
+        <div class="mar w-md-50">Latest from Metadata Technologies</div>
+       <div ><marquee scrollamount="10" bgcolor="black" direction="left" width="75%" height="40" align-items="center">
+        PG ADMISSION&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ph.D 1st Year Hostel Selection List&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7th Edition of Ravenshaw University Model United Nations(RUMUN)2022&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ph.D second selection 2022-23&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HOCKEY RESULTS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Venue of the ph.d admission 2022-23
+         </marquee>
+       </div>
+       <div class="arrow">
+        <span class="bi bi-caret-right"></span>
+       </div>
+    </article>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" style="width: 100%;">
+        <div class="carousel-indicators " style=" width: 10%; margin-left: 90%; margin-bottom: 20%;">
+          <div role="button" type="button"  data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></div>
+          <div role="button" type="button"  data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></div>
+          <div role="button" type="button"  data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></div>
+          <div role="button" type="button"  data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></div>
+          
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active ">
+            <img src="../image/banner-1.jpg" class="d-block w-100" style="height: 800px;" alt="...">
+            <div class="carousel-caption">
+                <div class="bg-light border border-2 border-light text-dark car" style=" margin-bottom: 250px;">
+                    <h3 style="margin-top: 40px;font-weight: bold; ">AUTOMATE WORKFLOWS & EMBRACE</h3>
+                    <h4 style="margin-top: 40px; font-weight: bold;  margin-top: -8px;">DIGITAL<br>TRANSFORMATION</h4>
+                    <p style="color: gray; text-align: start; margin-left: 78px;">Disruption-free turnkey implementation with tailored<br>Microsoft Dynamics 365 CRM solutions. </p><br>
+                    <div class="butt">
+                        <div>
+                            <a class="btn btn-secondary" href="#" >Learn More about Dynamics 365</a>
+                        </div>
+                        <div style="margin-left: 20px;">
+                            <a class="btn btn-danger" href="#">Watch Video</a>
+                        </div>
+                    </div>
+                </div>
+          </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../image/banner_2-1.jpg" class="d-block w-100" style="height: 800px;" alt="...">
+            <div class="carousel-caption">
+                <div class="bg-light border border-2 border-light text-dark car" style=" margin-bottom: 250px;">
+                    <h3 style="margin-top: 40px;font-weight: bold; ">EMPLOY THE MICROSOFT POWER<br>PLATFORM TO CREATE TAIORED<br>SOLUTIONS FOR YOUR <span style="font-weight: bold;font-size: larger;">BUSINESS</span></h3>
+                    <h4 style="margin-top: 40px; font-weight: bold;  margin-top: -8px;">DIGITAL<br>TRANSFORMATION</h4>
+                    <p style="color: gray; text-align: start; margin-left: 78px;">Disruption-free turnkey implementation with tailored<br>Microsoft Dynamics 365 CRM solutions. </p><br>
+                    <div class="butt">
+                        <div>
+                            <a class="btn btn-secondary" href="#" >Learn More about Dynamics 365</a>
+                        </div>
+                        <div style="margin-left: 20px;">
+                            <a class="btn btn-danger" href="#">Watch Video</a>
+                        </div>
+                    </div>
+                </div>
+          </div>
+          </div>
+          <div class="carousel-item ">
+            <img src="../image/banner_2.jpg" class="d-block w-100" style="height: 800px; alt="...">
+            <div class="carousel-caption">
+              <div class="bg-light border border-2 border-light text-dark car" style=" margin-bottom: 250px;">
+                  <h3 style="margin-top: 40px;font-weight: bold; ">BRING THE CAPABILITIES OF<br>MICROSOFT DYNAMICS 365 TO YOUR<br><span style="font-weight: bold; font-size: larger;">OPERATIONS</span></h3>
+                  <p style="color: gray; text-align: start; margin-left: 78px;">Incorporate the latest in Dynamics 365 to your Business and empower<br>teams to do more. </p><br>
+                  <div class="butt">
+                      <div>
+                          <a class="btn btn-secondary" href="#" >Learn More about Dynamics 365</a>
+                      </div>
+                      <div style="margin-left: 20px;">
+                          <a class="btn btn-danger" href="#">Watch Video</a>
+                      </div>
+                  </div>
+              </div>
+        </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../image/banner_4.jpg"  class="d-block;" style="height: 800px; width: 100%;" alt="...">
+            <div class="carousel-caption">
+              <div class="bg-light border border-2 border-light text-dark car" style=" margin-bottom: 250px;">
+                  <h3 style="margin-top: 40px;font-weight: bold;font-size: 40px; ">PROPERTY-xRM</h3>
+                  <p style="color: gray; text-align: start; margin-left: 78px;">Upgrade your Real Estate experience with the most advanced CRM<br>Software for property management.. </p><br>
+                  <div class="butt">
+                      <div>
+                          <a class="btn btn-secondary" href="#" >Learn More about Dynamics 365</a>
+                      </div>
+                      <div style="margin-left: 20px;">
+                          <a class="btn btn-danger" href="#">Watch Video</a>
+                      </div>
+                  </div>
+              </div>
+        </div>
+          </div>
+      </div>
+    </div>
+      <section>
+        <div id="kunal">
+          <div class="container">
+            <div class="row reveal">
+                <div class="col-md-12">
+                    <div class="sec-header">
+                        <h1>Who We Are</h1>
+                        <p>Metadata Technologies was incorporated in 2002 with the vision of helping businesses build strong customer relationships. We focus on providing streamlined<br> Customer Relationship Management (CRM) Solutions across the world. The idea has always been to deliver cost-effective solutions without deviating from quality. We<br> provide top-notch services by leveraging Microsoft Dynamics 365 CRM.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row second reveal">
+                <div class="col-md-4">
+                    <div class="card border border-0">
+                        <img src="../image/exp_icon1.png" class="card-img-top" alt="">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">What is Metadata Technologies?</h5>
+                            <p class="card-text foot">A trusted partner providing in-depth CRM<br> consulting & support to streamline business<br> operations through the Microsoft Platform.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-4">
+                    <div class="card border border-0">
+                        <img src="../image/exp_icon2.png" class="card-img-top" alt="">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Why Us?</h5>
+                            <p class="card-text foot">Two decades of domain expertise in CRM,<br> providing quality services to corporate entities<br> around the globe across segments.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-4">
+                    <div class="card border border-0">
+                        <img src="../image/exp_icon3.png" class="card-img-top" alt="">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">What sets us apart?</h5>
+                            <p class="card-text foot">We are much more than just a software solution<br> provider. Metadata partners with you to provide<br> holistic solutions from start to finish.</p>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+          </div>
+        </div>
+
+        <div class="bg mt-5">
+            <div class="container">
+              <div class="row reveal">
+                  <div class="col-md-12">
+                      <div class="sec-header">
+                          <h1>EVALUATE - ADAPT - EVOLVE</h1>
+                          <p>With intelligent Dynamics 365 Business Applications</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="row second reveal">
+                  <div class="col-md-12">
+                      <iframe src="https://www.youtube.com/embed/7VkWmAzZm70" title="frame"></iframe>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="kunal">
+          <div class="container">
+            <div class="row reveal">
+              <div class="col-md-12">
+                  <div class="sec-header">
+                      <h1>Who We Are</h1>
+                      <p>Metadata Technologies was incorporated in 2002 with the vision of helping businesses build strong customer relationships. We focus on providing streamlined<br> Customer Relationship Management (CRM) Solutions across the world. The idea has always been to deliver cost-effective solutions without deviating from quality. We<br> provide top-notch services by leveraging Microsoft Dynamics 365 CRM.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="row second reveal">
+            <div id="carouselExample" class="carousel carousel-dark slide col-md-12">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="col-md-4">
+                    <div class="card border border-0">
+                        <img src="../image/exp_icon2.png" class="card-img-top" alt="">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Why Us?</h5>
+                            <p class="card-text foot">Two decades of domain expertise in CRM,<br> providing quality services to corporate entities<br> around the globe across segments.</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                
+                <div class="carousel-item active">
+                  <div class="col-md-4">
+                    <div class="card border border-0">
+                        <img src="../image/exp_icon2.png" class="card-img-top" alt="">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Why Us?</h5>
+                            <p class="card-text foot">Two decades of domain expertise in CRM,<br> providing quality services to corporate entities<br> around the globe across segments.</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="carousel-item ">
+                  <div class="col-md-4">
+                    <div class="card border border-0">
+                        <img src="../image/exp_icon2.png" class="card-img-top" alt="">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Why Us?</h5>
+                            <p class="card-text foot">Two decades of domain expertise in CRM,<br> providing quality services to corporate entities<br> around the globe across segments.</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="carousel-item ">
+                  <div class="col-md-4">
+                    <div class="card border border-0">
+                        <img src="../image/exp_icon2.png" class="card-img-top" alt="">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Why Us?</h5>
+                            <p class="card-text foot">Two decades of domain expertise in CRM,<br> providing quality services to corporate entities<br> around the globe across segments.</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="carousel-item active">
+                  <div class="col-md-4">
+                    <div class="card border border-0">
+                        <img src="../image/exp_icon1.png" class="card-img-top" alt="">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">What is Metadata Technologies?</h5>
+                            <p class="card-text foot">A trusted partner providing in-depth CRM<br> consulting & support to streamline business<br> operations through the Microsoft Platform.</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          </div>
+        </div>
+      </section>
+      
+
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

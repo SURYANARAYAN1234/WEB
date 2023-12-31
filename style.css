@@ -1,0 +1,188 @@
+.menu-bar ul li:hover .sub-menu-1{
+    display: block;
+    position: relative;
+    
+    margin-left: 0%;
+    margin-top: 0%;
+    border: 1px solid rgb(250, 247, 247);
+}
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin-left: -14%;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+}
+header .navbar .nav-item .sub-menu-1 ul li{
+    padding: 5px 15px;
+}
+header .navbar .nav-item .sub-menu-1 ul li:hover{
+    background: #121a63;
+    
+}
+header .navbar .nav-link {
+    padding: 0 !important;
+    color: hsl(0, 0%, 0%);
+    font-size: 17px;
+    white-space: nowrap;
+}
+header .navbar .nav-item  {
+    padding-right: 25px;
+}
+article{
+    
+    font-size: 20px;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    color:white;
+    background-color: black;
+    padding: 10px;
+
+    
+}
+article .arrow span{
+    margin-left: -300px;
+    
+}
+article .mar{
+    background-color: black;
+    font-size: 20px;
+    width: 35%;
+    text-align: center;
+    margin-left: 10%;
+    margin-top: 0px;
+    padding: 0px;
+}
+article marquee {
+    padding: 15px;
+    font-size: 20px;
+}
+@media screen and (max-width:1200px){
+    article .mar{
+        width: 100%;
+        margin-left: 0px;
+        font-size: 13px;
+        text-align: left;
+    }
+    article marquee{
+        width: 80%;
+        margin-left: 60px;
+    }
+    article .arrow{
+        display: none;
+    }
+    
+}
+.carousel-caption .car{
+    width: 50%;
+    height: 40%;
+    margin-left: -150px;
+}
+.carousel-caption .car h3{
+    text-align: start;
+    margin-left: 30px;
+}
+.carousel-caption .car h4{
+    text-align: start;
+    margin-left: 30px;
+}
+.carousel-caption .car .butt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carousel-caption .car .butt div a{
+    margin-bottom: 50px;
+    padding: 10px;
+}
+#carouselExampleCaptions .carousel-indicators div{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: rgb(144, 144, 247);
+}
+#carouselExampleCaptions .carousel-indicators div:hover{
+    background-color: red;
+}
+#carouselExampleCaptions .carousel-indicators{
+    display: block;
+}
+@media screen and (max-width:1000px) {
+    .carousel-caption .car{
+        width: 100%;
+        height: 60%;
+        margin-left: auto;
+    }
+    .carousel-caption .car h3{
+        text-align: ;
+        margin-left: 0px;
+    }
+    .carousel-caption .car h4{
+        text-align: ;
+        margin-left: 0px;
+    }
+    .carousel-caption .car .butt{
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    .carousel-caption .car .butt div a{
+        margin-bottom: 5px;
+        padding: 10px;
+    }
+} 
+  .sec-header{
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 60px;
+  } 
+  .second{
+    margin-top: 20px;
+  }
+  .foot{
+    margin-top: 30px;
+  }
+  @keyframes animate{
+    0%{
+        opacity: 0;
+        transform: translateY(100px) scale(0.9);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+    }
+    @keyframes hide{
+        0%{
+            opacity: 0;
+            transform: translateY(100px) scale(0.9);
+        }
+        100%{
+            opacity: 0;
+            transform: translateY(0px) scale(1);
+        }
+        }
+    .reveal{
+        
+        animation: hide 100000s;
+    }
+    .reveal.active{
+        animation: animate 1.5s ;
+    }
+    iframe{
+        width: 100%;
+        height: 500px;
+        margin-bottom: 40px;
+        border-top: 1px solid gray;
+        border-left: 1px solid gray;
+    }
+    .bg{
+        background-color: rgb(215, 217, 218);
+    }
+
